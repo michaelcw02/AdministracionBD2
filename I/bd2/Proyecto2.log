@@ -1,0 +1,99 @@
+Connected.
+Procedimientos inserts
+prc insert Instructores
+
+Procedure created.
+
+No errors.
+prc insert Clientes
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR INSTRUCTORES
+PRC ACTUALIZAR NOMBRE INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR APELLIDOS INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR EDAD INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR GENERO INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR CLIENTES
+PRC ACTUALIZAR NOMBRE CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR APELLIDOS CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR GENERO CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR EDAD CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR PESO CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR ESTADO CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR INSTRUCTOR CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR FECHA INSCRIPCION CLIENTES
+
+Procedure created.
+
+No errors.
+procedures borrado
+procedure BORRAR INSTRUCTOR
+
+Procedure created.
+
+No errors.
+procedure BORRAR CLIENTE
+
+Procedure created.
+
+No errors.
+EXECUTE INSERTAR INSTRUCTORES
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+EXECUTE INSERTAR CLIENTES
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+

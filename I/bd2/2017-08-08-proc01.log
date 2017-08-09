@@ -1,0 +1,236 @@
+CONECTADO CON SYSTEM
+ERROR:
+ORA-28002: the password will expire within 7 days 
+
+
+Connected.
+DROP USER PROYECTO
+
+User dropped.
+
+
+User dropped.
+
+
+User dropped.
+
+
+Role dropped.
+
+
+User dropped.
+
+
+User created.
+
+
+User created.
+
+
+User created.
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+User altered.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+CREACION DE TABLAS
+
+Table created.
+
+
+Table created.
+
+LLAVES PRIMARIAS
+
+Table altered.
+
+
+Table altered.
+
+LLAVES FORANEAS
+
+Table altered.
+
+CHECK CONSTRAINTS
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Connected.
+Procedimientos inserts
+prc insert Instructores
+
+Procedure created.
+
+No errors.
+prc insert Clientes
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR INSTRUCTORES
+PRC ACTUALIZAR NOMBRE INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR APELLIDOS INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR EDAD INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR GENERO INSTRUCTORES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR CLIENTES
+PRC ACTUALIZAR NOMBRE CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR APELLIDOS CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR GENERO CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR EDAD CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR PESO CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR ESTADO CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR INSTRUCTOR CLIENTES
+
+Procedure created.
+
+No errors.
+PRC ACTUALIZAR FECHA INSCRIPCION CLIENTES
+
+Procedure created.
+
+No errors.
+procedures borrado
+procedure BORRAR INSTRUCTOR
+
+Procedure created.
+
+No errors.
+procedure BORRAR CLIENTE
+
+Procedure created.
+
+No errors.
+EXECUTE INSERTAR INSTRUCTORES
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+EXECUTE INSERTAR CLIENTES
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+create role ROL_GIMNASIO
+            *
+ERROR at line 1:
+ORA-01921: role name 'ROL_GIMNASIO' conflicts with another user or role name 
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+CONNECTING WITH ANA
+Connected.
+
+PL/SQL procedure successfully completed.
+
+Connected.
+
+PL/SQL procedure successfully completed.
+
+Connected.
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
