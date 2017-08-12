@@ -105,6 +105,13 @@ prc insert Instructores
 Procedure created.
 
 No errors.
+create public synonym prc_ins_instructor for proyecto.
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
 prc insert Clientes
 
 Procedure created.

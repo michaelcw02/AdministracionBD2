@@ -1,7 +1,7 @@
 --Avance #1--
 host cls
 
-spool 2017-08-11-proc02.log
+spool 2017-08-08-proc01.log
  
 prompt CONECTADO CON SYSTEM 
 conn system/root
@@ -11,7 +11,7 @@ drop user proyecto 	cascade;
 drop user ana 		cascade;
 drop user pedro 	cascade;
 drop role rol_conecta;
-
+drop pubblic synonym prc_ins_instructor
 
 drop user juan cascade;
 create user juan identified by juan123;
@@ -116,6 +116,14 @@ end prc_ins_instructor;
 show error
 --
 
+--esto es para que no se tenga que utilizar proycto.prc_ins_instructor
+--la unica diferencia es que esto no valida el objeto a validar... osea 
+--el objeto puede existir y siempre va a servir
+create public synonym prc_ins_instructor for proyecto.
+prc_ins_instructor;
+
+
+host pause
 
 
 --
@@ -128,8 +136,6 @@ commit;
 end prc_ins_cliente;
 /
 show error
-
-
 
 
 
@@ -349,6 +355,8 @@ connect pedro/ped1234;
 
 execute proyecto.prc_ins_cliente(11223355,'C3','C2','M',23,'AT',150,'LB',12345,2,sysdate,sysdate);
 execute proyecto.prc_ins_instructor(33225566,'B','B C','F',25);
+--esto sirve por el sinonimo publico que se agrego, pero igual el usuario tiene que tener los permisos basicos para la tabla.
+execute prc_ins_instructor(3215520,'B','B C','F',25);
 
 spool off
 
