@@ -1,0 +1,216 @@
+
+Connected.
+PARTE 1
+DELETING, CREATING AND CONFIGURING NEW USERS (BOB AND TOM)
+
+User dropped.
+
+
+User dropped.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+CONNECTING AS BOB
+Connected.
+
+Table created.
+
+
+Table altered.
+
+
+Procedure created.
+
+No errors.
+CONNECTING AS TOM
+Connected.
+
+Table created.
+
+
+Table altered.
+
+CHECK (MESES BETWEEN (1, 36))
+                       *
+ERROR at line 2:
+ORA-00907: missing right parenthesis 
+
+
+
+Procedure created.
+
+No errors.
+
+PARTE 2
+DELETING, CREATING AND CONFIGURING NEW USERS (MARY AND SUSAN)
+Connected.
+
+User dropped.
+
+
+User dropped.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+PARTE 3
+BOBs ROLES FOR CORRESPONDING NEW USERS
+Connected.
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Synonym dropped.
+
+
+Synonym dropped.
+
+Connected.
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PARTE 4
+TOMs ROLES FOR CORRESPONDING NEW USERS
+Connected.
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Synonym dropped.
+
+
+Synonym dropped.
+
+Connected.
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
