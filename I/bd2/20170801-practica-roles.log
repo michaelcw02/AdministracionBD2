@@ -1,0 +1,207 @@
+PRACTICA
+
+Connected.
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+User dropped.
+
+
+User dropped.
+
+
+User dropped.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User created.
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+USER: JOHN
+Connected.
+
+Table created.
+
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+GRANT ROLE_CONNECT  TO EMP_BASIC
+*
+ERROR at line 1:
+ORA-01932: ADMIN option not granted for role 'ROLE_CONNECT' 
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+        ID NAME                                                                 
+---------- ------------------------------                                       
+         1 JOHN                                                                 
+         2 JIRA                                                                 
+         3 JOSE                                                                 
+
+USER: JIRA
+Connected.
+
+1 row created.
+
+
+1 row created.
+
+
+        ID NAME                                                                 
+---------- ------------------------------                                       
+         1 JOHN                                                                 
+         2 JIRA                                                                 
+         3 JOSE                                                                 
+         4 MIKE                                                                 
+         5 CHEN                                                                 
+
+INSUFICIENT PRIVILEDGES FOR JIRA INTO JOHN.EMPLEADOS
+UPDATE JOHN.EMPLEADOS SET NAME = 'SARA' WHERE ID = 5
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+DELETE JOHN.EMPLEADOS WHERE ID = 3
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+
+Table created.
+
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+GRANT ROLE_CONNECT  TO MAS_BASIC
+*
+ERROR at line 1:
+ORA-01932: ADMIN option not granted for role 'ROLE_CONNECT' 
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Grant succeeded.
+
+USER: JOSE
+ERROR:
+ORA-01045: user JOSE lacks CREATE SESSION privilege; logon denied 
+
+
+Warning: You are no longer connected to ORACLE.
+SP2-0640: Not connected
+SP2-0640: Not connected
+SP2-0640: Not connected
+SP2-0640: Not connected
+SP2-0640: Not connected
+SP2-0640: Not connected
