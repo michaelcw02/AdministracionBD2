@@ -1,43 +1,50 @@
---Avance #1--
-host cls
+--Sinónimos:
+--Publicos (Global, para todos los usuarios es el mismo)
+--Privados  (para un usuario específico)
 
-spool 2017-08-11-proc02.log
+--Puntero
+--Facilidad, unificar, 
+--Seguridad, para ocultar.
+
+--Cuando un usuario crea objetos globales
+--Ej: ROLES, SINONIMOS PUBLICOS, TABLESPACES, USUARIOS
+--cuando el usuario se borra aunque sea cascade, el objeto permanece!
+
+--con el drop user cascade lo que se borra son los objetos propios del usuario (usuario.objeto)
+--ej: tablas (PK, FK, CK, TRIGGERS), vistas, secuencias, sinonimos privados, procedimientos, funciones, paquetes.
+
+host cls
+spool Proc2.log
+
  
 prompt CONECTADO CON SYSTEM 
 conn system/root
 
+
 prompt DROP USER PROYECTO
-drop user proyecto 	cascade;
-drop user ana 		cascade;
-drop user pedro 	cascade;
-drop role rol_conecta;
-
-
+drop user proyecto cascade;
+drop user ana cascade;
 drop user juan cascade;
-create user juan identified by juan123;
-
+drop user pedro cascade;
+drop role ROL_GIMNASIO;
+drop public synonym prc_ins_instructor;
+drop public synonym prc_prueba;
 
 --CREATE USER
 create user proyecto identified by pro1234;
-create user ana		 identified by ana1234;
-create user pedro 	 identified by ped1234;
-alter user ana quota unlimited on system;
-alter user juan quota unlimited on system;
-alter user pedro quota unlimited on system;
+create user ana identified by ana123;
+create user juan identified by juan123;
+create user pedro identified by pedro123;
 
-create role rol_conecta;
-
-grant create session to rol_conecta;
-grant create table   to rol_conecta;
-grant create role    to rol_conecta;
-
-grant rol_conecta to ana;
-grant rol_conecta to juan;
-grant rol_conecta to pedro;
-
+--seccion de permisos
 grant dba to proyecto;
+grant create session to ana;
+grant create session to juan;
+grant create session to pedro;
+
 
 conn proyecto/pro1234;
+create role ROL_GIMNASIO;
 
 --CREATE TABLES--
 prompt CREACION DE TABLAS
@@ -84,16 +91,22 @@ prompt CHECK CONSTRAINTS
 
 alter table CLIENTES add constraint cliente_ck01 check (genero in ('M','F'));
 
+
 alter table CLIENTES add constraint cliente_ck04 check(edad > 13);
 
 alter table INSTRUCTORES add constraint instructor_ck01 check (genero in('M','F'));
 
 alter table INSTRUCTORES add constraint instructor_ck02 check(edad > 19);
 
+---
+---------------------------------------------------------
+PROMPT Proyecto2 Inicia acá
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
 
-
-
-host cls
+--host cls
 
  
 --conn system/root
@@ -114,9 +127,10 @@ commit;
 end prc_ins_instructor;
 /
 show error
---
+--No valida que el objeto apuntado exista!
+create public synonym prc_ins_instructor for proyecto.prc_ins_instructor;
 
-
+create public synonym prc_prueba for proyecto.prc_ins_instructor;
 
 --
 prompt prc insert Clientes
@@ -128,7 +142,6 @@ commit;
 end prc_ins_cliente;
 /
 show error
-
 
 
 
@@ -268,6 +281,15 @@ show error
 
 
 
+
+
+
+
+
+
+
+
+
 ------------------------FIN PROCEDURES ACTUALIZAR----------------------------
 ------------------------PROCEDURES BORRAR------------------------------------
 prompt procedures borrado
@@ -313,44 +335,51 @@ prompt EXECUTE INSERTAR CLIENTES
 execute prc_ins_cliente(402300598,'C1','C1','M',21,'AD',60,'KG',123456,1,sysdate,sysdate);
 execute prc_ins_cliente(402200675,'C3','C2','M',23,'AT',150,'LB',12345,2,sysdate,sysdate);
 
-grant execute on proyecto.prc_ins_cliente to ana;
+grant execute on prc_ins_instructor to juan;
+grant execute on prc_ins_instructor to ROL_GIMNASIO;
+grant execute on prc_ins_cliente to ana;
+grant execute on prc_ins_cliente to ROL_GIMNASIO;
+--host pause
+grant ROL_GIMNASIO to pedro;
+--host pause
+prompt usuario ana
+conn ana/ana123
 
-grant execute on proyecto.prc_ins_instructor to juan;
+prompt Ana ejecuta procedimiento
+execute proyecto.prc_ins_cliente(402200679,'C3','C2','M',23,'AT',150,'LB',12345,2,sysdate,sysdate);
 
-create role ROL_GIMNASIO;
+prompt usuario juan
+conn juan/juan123
 
-GRANT EXECUTE ON PROYECTO.PRC_INS_CLIENTE TO ROL_GIMNASIO;
-GRANT EXECUTE ON PROYECTO.PRC_INS_INSTRUCTOR TO ROL_GIMNASIO;
+prompt Juan ejecuta procedimiento Insertar INSTRUCTOR
+execute proyecto.prc_ins_instructor(12349,'A','A C','M',30);
+--select * from proyecto.INSTRUCTORES;
+PROMPT no puedo insertar directamente
+--insert into proyecto.INSTRUCTORES(cedula,nombre,apellidos,genero,edad) values (12348,'A','A C','M',30);
+--commit;
 
-GRANT ROL_GIMNASIO TO pedro;
+prompt usuario pedro
+conn pedro/pedro123
 
-prompt CONNECTING WITH ANA
-
-CONNECT ana/ana1234;
-
-
-
---intental crear un cliente llamando el PROCEDIMIENTO
-execute proyecto.prc_ins_cliente(116290538,'C3','C2','M',23,'AT',150,'LB',12345,2,sysdate,sysdate);
-
---brindar permisos al usuario JUAN de insertar instructores por medio del procedimiento
-
-connect juan/juan123;
-
-execute proyecto.prc_ins_instructor(654987,'B','B C','F',25);
-
-
---que el usuario proyecto pueda crear un rol llamado ROL_GIMNASIO
---y darle permisos de ejecucion a los procedimiento de isntructor e insertar cliente, 
---crear el usuario pedro, darle permisos ed conexion(system) y el permiso del rol_gimnasio
---se lo da el usuario proyecto y realizar una prueba de inserta en ambas tablas usando los procedimientos
-
-connect pedro/ped1234;
-
-execute proyecto.prc_ins_cliente(11223355,'C3','C2','M',23,'AT',150,'LB',12345,2,sysdate,sysdate);
-execute proyecto.prc_ins_instructor(33225566,'B','B C','F',25);
+execute proyecto.prc_ins_cliente(102200679,'C3','C2','M',23,'AT',150,'LB',12345,2,sysdate,sysdate);
+prompt Con sinonimo global prc_prueba
+execute prc_prueba(22349,'A','A C','M',30);
 
 spool off
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,366 @@
+
+Connected.
+PARTE 1
+DELETING, CREATING AND CONFIGURING NEW USERS (BOB AND TOM)
+
+User dropped.
+
+
+User dropped.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+CONNECTING AS BOB
+Connected.
+
+Table created.
+
+
+Table altered.
+
+
+Procedure created.
+
+No errors.
+CONNECTING AS TOM
+Connected.
+
+Table created.
+
+
+Table altered.
+
+
+Procedure created.
+
+No errors.
+
+PARTE 2
+DELETING, CREATING AND CONFIGURING NEW USERS (MARY AND SUSAN)
+CONNECTING AS System Admin
+Connected.
+
+User dropped.
+
+
+User dropped.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+PARTE 3
+BOBs ROLES FOR CORRESPONDING NEW USERS
+CONNECTING AS System Admin
+Connected.
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Synonym dropped.
+
+
+Synonym dropped.
+
+CONNECTING AS BOB
+Connected.
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PARTE 4
+TOMs ROLES FOR CORRESPONDING NEW USERS
+CONNECTING AS System Admin
+Connected.
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Synonym dropped.
+
+
+Synonym dropped.
+
+CONNECTING AS TOM
+Connected.
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+PARTE 5
+DOING INSERTS WITH SUSAN AND MARY INTO FRUTAS AND ACTIVOS
+CONNECTING AS MARY
+Connected.
+TRYING TO SELECT ON FRUTAS AND ACTIVOS                !! ONE ERROR ABOUT INSUFICIENT PRIVILEGES TO SELECT ( ACTIVOS)
+
+        ID NOM_FRUTA  E                                                         
+---------- ---------- -                                                         
+         0 BANANO     A                                                         
+         1 SANDIA     A                                                         
+
+SELECT * FROM TOM.ACTIVOS
+                  *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO INSERT INTO FRUTAS AND ACTIVOS            !! TWO ERRORS ABOUT INSUFICIENT PRIVILEGES TO INSERT (FRUTAS, ACTIVOS)
+INSERT INTO BOB.FRUTAS VALUES(02, 'FRESA', 'A')
+                *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO TOM.ACTIVOS VALUES(02, 'HOOW', 8)
+                *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO UPDATE FRUTAS AND ACTIVOS                  !! ONE ERROR ABOUT INSUFICIENT PRIVILEGES TO UPDATE (FRUTAS)
+UPDATE BOB.FRUTAS SET NOM_FRUTA = 'KIWI' WHERE ID = 00
+           *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+
+1 row updated.
+
+TRYING TO DELETE FRUTAS AND ACTIVOS                  !! ONE ERROR ABOUT INSUFICIENT PRIVILEGES TO DELETE (FRUTAS)
+DELETE BOB.FRUTAS WHERE ID = 00
+           *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+
+1 row deleted.
+
+TRYING TO INSERT USING STORED PROCEDURES WITHOUT SYNONYMS                !! ONE ERROR ABOUT NOT DECLARING PROCEDURE (ACTIVOS)
+
+PL/SQL procedure successfully completed.
+
+BEGIN TOM.PRC_INS_ACTIVOS(03, 'ME CAGO', 30); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00201: identifier 'TOM.PRC_INS_ACTIVOS' must be declared 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+TRYING TO INSERT USING PUBLIC SYNONYM                                    !! TWO ERRORS ABOUT INSUFICIENT PRIVILEGES TO INSERT (FRUTAS, ACTIVOS)
+INSERT INTO S_FRUTAS VALUES (04, 'PERA', 'I')
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO ACTIVOS2 VALUES (04, 'QUE ES ESTO', 32)
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+CONNECTING AS SUSAN
+Connected.
+TRYING TO SELECT ON FRUTAS AND ACTIVOS                !! ONE ERROR ABOUT INSUFICIENT PRIVILEGES TO SELECT ( ACTIVOS)
+SELECT * FROM BOB.FRUTAS
+                  *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+
+        ID NOM_ACTIVO      MESES                                                
+---------- ---------- ----------                                                
+         1 WHERE               7                                                
+
+TRYING TO INSERT INTO FRUTAS AND ACTIVOS            !! TWO ERRORS ABOUT INSUFICIENT PRIVILEGES TO INSERT (FRUTAS, ACTIVOS)
+INSERT INTO BOB.FRUTAS VALUES(05, 'GILIPOLLAS', 'A')
+                *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO TOM.ACTIVOS VALUES(05, 'LGBT', 10)
+                *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO UPDATE FRUTAS AND ACTIVOS                  !! ONE ERROR ABOUT INSUFICIENT PRIVILEGES TO UPDATE (FRUTAS)
+
+1 row updated.
+
+UPDATE TOM.ACTIVOS SET NOM_ACTIVO = 'HELLOOWA' WHERE ID = 01
+           *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO DELETE FRUTAS AND ACTIVOS                  !! ONE ERROR ABOUT INSUFICIENT PRIVILEGES TO DELETE (FRUTAS)
+
+1 row deleted.
+
+DELETE TOM.ACTIVOS WHERE ID = 01
+           *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO INSERT USING STORED PROCEDURES WITHOUT SYNONYMS                !! ONE ERROR ABOUT NOT DECLARING PROCEDURE (ACTIVOS)
+BEGIN BOB.PRC_INS_FRUTAS(05, 'MECHIMA', 'I'); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7: 
+PLS-00201: identifier 'BOB.PRC_INS_FRUTAS' must be declared 
+ORA-06550: line 1, column 7: 
+PL/SQL: Statement ignored 
+
+
+
+PL/SQL procedure successfully completed.
+
+TRYING TO INSERT USING PUBLIC SYNONYM                                    !! TWO ERRORS ABOUT INSUFICIENT PRIVILEGES TO INSERT (FRUTAS, ACTIVOS)
+INSERT INTO S_FRUTAS VALUES (06, 'PERAPOD', 'I')
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO ACTIVOS2 VALUES (06, 'QUE JESTO', 32)
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
