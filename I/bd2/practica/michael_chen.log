@@ -1,0 +1,372 @@
+PRACTICA - MICHAEL CHEN WANG
+
+ERROR:
+ORA-28002: the password will expire within 7 days 
+
+
+Connected.
+PARTE 1
+CREANDO PERMISOS MINIMOS
+
+User dropped.
+
+
+User dropped.
+
+
+User dropped.
+
+
+User dropped.
+
+DROPPING ROLES
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+DROPPING SYNONYMS
+
+Synonym dropped.
+
+
+Synonym dropped.
+
+
+Synonym dropped.
+
+
+Synonym dropped.
+
+
+User created.
+
+
+User created.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+CONNECTANDOSE COMO RAMIRO
+Connected.
+
+Table created.
+
+
+Table altered.
+
+
+Procedure created.
+
+No errors.
+CONNECTANDOSE COMO MARIA
+Connected.
+
+Table created.
+
+
+Table altered.
+
+
+Procedure created.
+
+No errors.
+PARTE 2
+CREANDO USUARIOS (BOBY Y TOMMY)
+PARTE 3
+RAMIRO CREA ROLES Y ASIGNA PERMISOS
+CONNECTING AS RAMIRO
+Connected.
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+PARTE 4
+MARIA CREA ROLES Y ASIGNA PERMISOS
+CONNECTING AS MARIA
+Connected.
+
+Role created.
+
+
+Role created.
+
+
+Role created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+PARTE 5
+REALIZAR OPERACIONES CRUD A MASCOTAS Y EMPLEADOS CON BOBY Y TOMMY
+INTENTAR REALIZAR EL EXECUTE A AMBOS PROCESOS DE CADA TABLA
+CONNECTING AS BOBY
+Connected.
+TRYING TO SELECT ON MASCOTAS AND EMPLEADOS
+!!! NO HAY ERRORES YA QUE BOBY TIENE PERMISOS DE EMP_JEFE Y VET_CONSULTA !!!
+
+        ID APODO_MASC E                                                         
+---------- ---------- -                                                         
+         0 FIRULAYS   V                                                         
+         1 PANCHA     M                                                         
+
+
+        ID NOMBRE        SALARIO                                                
+---------- ---------- ----------                                                
+         0 JUAN             1000                                                
+         1 JOSE             5000                                                
+
+TRYING TO INSERT INTO MASCOTAS AND EMPLEADOS
+!!! DOS ERRORES PORQUE A BOBY NO SE LE DIERON PERMISOS DE INSERTAR !!!
+INSERT INTO RAMIRO.MASCOTAS VALUES(02, 'KUNA', 'V')
+                   *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO MARIA.EMPLEADOS VALUES(02, 'YEEN', 9999)
+                  *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO UPDATE MASCOTAS AND EMPLEADOS
+!!! HAY UN ERROR EN MASCOTAS PORQUE BOBY SOLO TIENE PERMISOS DE VET_CONSULTA, VET_PROCESO !!!
+UPDATE RAMIRO.MASCOTAS SET APODO_MASCOTA = 'KIWI' WHERE ID = 00
+              *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+
+1 row updated.
+
+TRYING TO DELETE MASCOTAS AND EMPLEADOS
+!!! HAY UN ERROR EN MASCOTAS PORQUE BOBY SOLO TIENE PERMISOS DE VET_CONSULTA, VET_PROCESO !!!
+DELETE RAMIRO.MASCOTAS WHERE ID = 00
+              *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+
+1 row deleted.
+
+TRYING TO INSERT USING STORED PROCEDURES WITHOUT SYNONYMS
+!!! NO HAY ERRORES BOBY TIENE PERMISO DE EJECUTAR !!!
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+TRYING TO INSERT USING PUBLIC SYNONYM
+!!! DOS ERRORES PORQUE BOBY NO TIENEN NINGUN PERMISO PARA SINONIMOS DE TABLAS !!!
+INSERT INTO TAB_MASCOTAS 	VALUES (04, 'PERA', 'V')
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO EMPLEADOS3 		VALUES (04, 'ERNESTO', 320)
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+CONNECTING AS TOMMY
+Connected.
+TRYING TO SELECT ON MASCOTAS AND EMPLEADOS
+!!! NO HAY ERRORES YA QUE TOMMY TIENE PERMISOS DE EMP_JEFE Y VET_CONSULTA !!!
+
+        ID APODO_MASC E                                                         
+---------- ---------- -                                                         
+         0 FIRULAYS   V                                                         
+         1 PANCHA     M                                                         
+         3 MELOCOTON  M                                                         
+
+
+        ID NOMBRE        SALARIO                                                
+---------- ---------- ----------                                                
+         1 JOSE             5000                                                
+         3 WALTER            300                                                
+
+TRYING TO INSERT INTO MASCOTAS AND EMPLEADOS
+!!! DOS ERRORES PORQUE A TOMMY NO SE LE DIERON PERMISOS DE INSERTAR !!!
+INSERT INTO RAMIRO.MASCOTAS VALUES(05, 'NEGRO', 'V')
+                   *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO MARIA.EMPLEADOS VALUES(05, 'MONICA', 9999)
+                  *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO UPDATE MASCOTAS AND EMPLEADOS
+!!! HAY UN ERROR EN EMPLEADOS PORQUE TOMMY SOLO TIENE PERMISOS DE EMP_SEL, EMP_PROCESO !!!
+
+1 row updated.
+
+UPDATE MARIA.EMPLEADOS SET NOMBRE = 'RITA' WHERE ID = 01
+             *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO DELETE MASCOTAS AND EMPLEADOS
+!!! HAY UN ERROR EN EMPLEADOS PORQUE TOMMY SOLO TIENE PERMISOS DE EMP_SEL, EMP_PROCESO !!!
+
+1 row deleted.
+
+DELETE MARIA.EMPLEADOS WHERE ID = 01
+             *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+TRYING TO INSERT USING STORED PROCEDURES WITHOUT SYNONYMS
+!!! NO HAY ERRORES TOMMY TIENE PERMISO DE EJECUTAR !!!
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+TRYING TO INSERT USING PUBLIC SYNONYM
+!!! DOS ERRORES PORQUE TOMMY NO TIENEN NINGUN PERMISO PARA SINONIMOS DE TABLAS !!!
+INSERT INTO TAB_MASCOTAS 	VALUES (07, 'TUTU', 'V')
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+INSERT INTO EMPLEADOS3 		VALUES (07, 'YESSENIA', 320)
+            *
+ERROR at line 1:
+ORA-01031: insufficient privileges 
+
+
+
