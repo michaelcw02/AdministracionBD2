@@ -1,0 +1,88 @@
+Arquitectura de BD
+
+Tiene un software que interactua con las diferentes SO
+
+Tarea:
+	Buscar las reglas de Codd
+
+Existen varios tipos de softwares  
+
+	OS
+		Linux
+			Ubuntu
+			Debian
+			Centos
+		Windows
+			2003
+			2008
+			2012
+			2016
+		
+		
+	RDBMS: 
+	Hay diferentes bases de datos como:
+		MySQL
+		Oracle
+		PostgreSQL
+		SQL Server
+		
+	Hay procesos de memoria
+		Window Services
+		
+	
+Esquemas
+Es la arquitectura del modelo de varios BD de cada fabricante
+
+SQL Server y PostgreSQL
+	Tiene que generar una base de datos por cada usuario (Esto es muy usado en SAP B.O.(Bussiness One) )
+	BD1.TAB1
+	BD2.TAB1
+	Si fuera el caso en la que se estuvieran manejando varias compañías, entonces cada compañía tendría un base de datos
+	
+	Comparte los procesos de memoria
+	Cada BD es un grupo de archivos apartes (Es muy sencillo para trabajar, no consume mucha memoria, al igual que PostgreSQL)
+	
+Oracle:
+	Se puede clonar toda la base de datos, pero para esto ocupa mucha memoria para poder realizarlo
+	Lo que se hace es, crear instancias de oracle (Esto hace que Oracle sea sumamente pesada)
+	Puede tener varias BD que son instancias, por lo que usan memorias separadas por bd
+	utiliza schemas por usuario con objetos
+		USER1.TAB1
+		USER2.TAB1
+	Oracle realiza más servicios DLL donde hace que solo se pueda utilizar una instancia que es lo que se hace comunmente
+	Pero se pueden hacer varias instancias (Whaaat?? Dont trust the last 2 lines)
+	
+	Oracle es mas complicada, pero SQL Server PostgreSQL no es tan complicado, pero es igual de robusta
+	
+2.5 Monitoreo y controles
+Ejercicio de monitoreo
+
+Diccionario de datos
+	Es una fuente casi inagotable de recursos para establecer controles y monitoreos en la BD
+	Cuando se hace una tabla se debe tener registrado a cual usuario le perteneces
+
+	
+=== TODOS ESTOS PROCESOS SONBASICOS QUE DEBE TENER TODA BD DE UNA EMPRESA ===
+Roles
+Manejos	
+	Sesiones
+	Espacio
+	Memoria 
+Bloqueos
+respaldo del codigo fuente
+encriptar el codigo fuente y guardar repositorio
+procedimiento, funciones, parquetes con errores de compilacion
+tareas avanzadas de administracion
+	bloqueo de tablas por triggers
+		Hacer triggers dinamicos para bloquear ej: 100 tablas ya sea para que no se puedan modificar etc
+	clonar usuarios, tablas
+
+A la hora de manejar errores, pensar mas por el usuario y mandar correos a los administradores a la hora de suceder
+Hay que saber cuales son los procesos critios que tiene la bd
+
+Linux en nube es todo en command shell (ssh, putty)
+AWS brinda una herramienta CLI
+
+
+alter user system identified by root;
+
