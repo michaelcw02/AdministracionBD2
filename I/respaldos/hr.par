@@ -1,0 +1,6 @@
+#estos son los parametros
+userid=system/root
+owner=hr
+statistics=none
+file=C:\bd2\hr.dmp
+log=C:\bd2\hr.log

@@ -1,0 +1,7 @@
+#estos son los parametros
+userid=system/root
+#owner=hr
+full=y
+statistics=none
+file=C:\bd2\full.dmp
+log=C:\bd2\full.log
