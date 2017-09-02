@@ -1,0 +1,1 @@
+imp parfile=C:\bd2\imp_from_full_to_hr.par

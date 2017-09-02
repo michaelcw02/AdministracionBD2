@@ -1,0 +1,7 @@
+#imp_from_full_hr3_tables.par
+userid=system/root
+fromuser=hr
+touser=hr3
+tables=regions, locations
+file=C:\bd2\Full.dmp
+log=C:\bd2\imp_from_full_hr3_tables.log
