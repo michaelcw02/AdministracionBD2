@@ -1,0 +1,7 @@
+#exp parfile=C:\bd2\hr2.par
+userid=system/root
+owner=hr
+rows=n
+file=C:\bd2\hr2.dmp
+log=C:\bd2\hr2.log
+statistics=none
