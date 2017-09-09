@@ -1,5 +1,12 @@
-REM crea.bat
+REM crea_usuario.bat
+echo off
+(
+    set /p var1=
+) < C:\CHEN\config.ini
 
-sqlplus /nolog @C:\bd2\crea_usuario.sql
+SET VAR01=%var1:~20,100%
 
-exit
+sqlplus /nolog @C:\CHEN\OptBasicas\crea_usuario.sql
+START %VAR01% C:\CHEN\OptBasicas\logs\crea_usuario.log
+
+EXIT

@@ -115,21 +115,27 @@ ECHO Sale del programa
 goto end
 
 :OptCreaUsuario
+START C:\CHEN\OptBasicas\CREA_USUARIO.BAT
 goto OptBasicas
 
 :OptCreaDosTablas
+START C:\CHEN\OptBasicas\CREA_TABLAS.BAT
 goto OptBasicas
 
 :OptCreaProcUno
+START C:\CHEN\OptBasicas\crea_procedimiento1.bat
 goto OptBasicas
 
 :OptCreaProcDos
+START C:\CHEN\OptBasicas\crea_procedimiento2.bat
 goto OptBasicas
 
 :OptInvcProcUno
+START C:\CHEN\OptBasicas\invoca_procedimiento1.bat
 goto OptBasicas
 
 :OptInvcProcDos
+START C:\CHEN\OptBasicas\invoca_procedimiento2.bat
 goto OptBasicas
 
 :OptRespFull

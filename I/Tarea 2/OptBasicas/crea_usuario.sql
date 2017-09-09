@@ -1,22 +1,16 @@
 --
 conn system/root
+
 set linesize 250
 set pagesize 100 
-spool C:\bd2\crea_usuario.log
+
+spool C:\CHEN\OptBasicas\logs\crea_usuario.log
 prompt crear y borrar usuario
-drop user test cascade;
 
-create user test identified by test;
-
+drop user CHEN cascade;
+create user CHEN identified by CHEN123;
 --
-grant dba to test;
-
+grant dba to CHEN;
 
 spool off
-
-
-host "C:\Program Files (x86)\Notepad++\notepad++" C:\bd2\crea_usuario.log
-
-
 exit
-
