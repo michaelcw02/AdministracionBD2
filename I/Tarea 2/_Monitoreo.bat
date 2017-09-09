@@ -114,5 +114,40 @@ goto OptRecuperacion
 ECHO Sale del programa
 goto end
 
+:OptCreaUsuario
+goto OptBasicas
+
+:OptCreaDosTablas
+goto OptBasicas
+
+:OptCreaProcUno
+goto OptBasicas
+
+:OptCreaProcDos
+goto OptBasicas
+
+:OptInvcProcUno
+goto OptBasicas
+
+:OptInvcProcDos
+goto OptBasicas
+
+:OptRespFull
+goto OptRespaldo
+
+:OptRespUsuario
+goto OptRespaldo
+
+:OptCreaUsuarioNuevo
+goto OptRecuperacion
+
+:OptRecuRespFull
+goto OptRecuperacion
+
+:OptRecuRespTab1
+goto OptRecuperacion
+
+:OptRecuRespTab2
+goto OptRecuperacion
 
 :end
