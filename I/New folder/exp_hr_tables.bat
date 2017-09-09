@@ -1,0 +1,1 @@
+exp parfile=C:\bd\exp_hr3_tables.par

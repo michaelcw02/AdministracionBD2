@@ -1,0 +1,6 @@
+#exp_hr3_tables.par
+userid=system/root
+tables=hr.regions, hr.locations
+statistics=none
+file=C:\bd2\exp_hr3_tables.dmp
+log=C:\bd2\exp_hr3_tables.log
