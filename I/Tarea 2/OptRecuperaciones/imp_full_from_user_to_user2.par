@@ -1,6 +1,5 @@
-#C:\bd2\imp_hr_to_hr2.par
 userid=system/root
-fromuser=hr
-touser=hr2
+fromuser=CHEN
+touser=CHEN2
 file=C:\CHEN\OptRespaldo\respaldos\user.dmp
 log=C:\CHEN\OptRecuperaciones\logs\imp_full_from_user_to_user2.log

@@ -147,15 +147,19 @@ START C:\CHEN\OptRespaldo\crea_resp_user.bat
 goto OptRespaldo
 
 :OptCreaUsuarioNuevo
+START C:\CHEN\OptRecuperaciones\crea_usuario2.bat
 goto OptRecuperacion
 
 :OptRecuRespFull
+START C:\CHEN\OptRecuperaciones\imp_full_from_user_to_user2.bat
 goto OptRecuperacion
 
 :OptRecuRespTab1
+START C:\CHEN\OptRecuperaciones\imp_tab1_from_user_to_user2.bat
 goto OptRecuperacion
 
 :OptRecuRespTab2
+START C:\CHEN\OptRecuperaciones\imp_tab2_from_user_to_user2.bat
 goto OptRecuperacion
 
 :end

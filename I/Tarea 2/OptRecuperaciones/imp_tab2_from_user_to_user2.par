@@ -1,0 +1,6 @@
+userid=system/root
+fromuser=CHEN
+touser=CHEN2
+tables=MASCOTA
+file=C:\CHEN\OptRespaldo\respaldos\user.dmp
+log=C:\CHEN\OptRecuperaciones\logs\imp_tab2_from_user_to_user2.log
