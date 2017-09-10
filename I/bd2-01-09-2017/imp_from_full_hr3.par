@@ -1,0 +1,6 @@
+#importamos del full, solo hr a hr3
+userid=system/root
+fromuser=hr
+touser=hr3
+file=C:\bd2\Full.dmp
+log=C:\bd2\imp_from_full_hr3.log

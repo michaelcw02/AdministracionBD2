@@ -139,9 +139,11 @@ START C:\CHEN\OptBasicas\invoca_procedimiento2.bat
 goto OptBasicas
 
 :OptRespFull
+START C:\CHEN\OptRespaldo\crea_resp_full.bat
 goto OptRespaldo
 
 :OptRespUsuario
+START C:\CHEN\OptRespaldo\crea_resp_user.bat
 goto OptRespaldo
 
 :OptCreaUsuarioNuevo

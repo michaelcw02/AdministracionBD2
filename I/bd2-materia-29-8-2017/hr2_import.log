@@ -1,0 +1,16 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+
+Export file created by EXPORT:V11.02.00 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+. importing HR's objects into HR2
+. . importing table                    "COUNTRIES"         25 rows imported
+. . importing table                  "DEPARTMENTS"         27 rows imported
+. . importing table                    "EMPLOYEES"        107 rows imported
+. . importing table                  "JOB_HISTORY"         10 rows imported
+. . importing table                         "JOBS"         19 rows imported
+. . importing table                    "LOCATIONS"         23 rows imported
+. . importing table                      "REGIONS"          4 rows imported
+About to enable constraints...
+Import terminated successfully without warnings.

@@ -1,0 +1,32 @@
+Spool en los proyectos:
++++++++++++++++++++++++
+Todos los comandos de CMD (linea de comando Windows)
+(sea xyz un .bat o un .exe)
+genera un standard output #1 y un standar error #2
+ej:
+xyz -a 123 -b 456 1>a.log 2>b.log
+
+posicionado en C:\bd2\
+Ej:
+del x3.txt 1>a.log 2>b.log
+
+b.log queda el error standar.
+a.log queda el standar output.
+
+(creando archivo)
+dir > x3.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

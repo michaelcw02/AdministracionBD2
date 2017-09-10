@@ -2,15 +2,12 @@
 cls
 :start
 cls
-ECHO. --- Universidad Nacional de Costa Rica ---
-ECHO. ---       Escuela de Informatica       ---
-ECHO. ---    Administracion Bases de Datos   ---
-ECHO.
+ECHO. --Sistema de Monitoreo---
 ECHO 1. Borrar y Crear Usuario
 ECHO 2. Crear Tabla
 ECHO 3. Borrar Tabla
-ECHO 4. Monitoreo Bloqueos
-ECHO 5. Respaldar codigo fuente
+ECHO 4. Monitoreo de Bloqueos
+ECHO 5. Resp. Cod. Fuente
 ECHO 0. Salir
 
 set choice=
@@ -19,8 +16,8 @@ if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto OptUsuario
 if '%choice%'=='2' goto OptCreaTabla
 if '%choice%'=='3' goto OptBorraTabla
-if '%choice%'=='4' goto OptMonitoreoBloqua
-if '%choice%'=='5' goto OptRespCodFuente
+if '%choice%'=='4' goto OptMonBloqueo
+if '%choice%'=='5' goto OptCodFuente
 if '%choice%'=='0' goto OptSalir
 ECHO "%choice%" is not valid, try again
 ECHO.
@@ -38,12 +35,12 @@ goto start
 start C:\bd2\borra_tabla.bat
 goto start
 
-:OptMonitoreoBloqua
-start C:\bd2\Monitoreo_bloqueo.bat
+:OptMonBloqueo
+start C:\bd2\monit_bloqueos2.bat
 goto start
 
-:OptRespCodFuente
-start C:\bd2\respaldo_codigo_fuente.bat
+:OptCodFuente
+start C:\bd2\cod_fuente.bat
 goto start
 
 :OptSalir
@@ -51,3 +48,6 @@ ECHO Sale del programa
 goto end
 
 :end
+
+
+

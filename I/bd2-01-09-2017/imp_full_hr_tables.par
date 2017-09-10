@@ -1,0 +1,5 @@
+#imp_full_hr_tables.par
+userid=system/root
+full=y
+file=C:\bd2\exp_hr_tables.dmp
+log=C:\bd2\exp_hr_tables.log

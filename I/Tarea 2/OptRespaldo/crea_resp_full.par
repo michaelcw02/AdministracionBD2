@@ -1,0 +1,5 @@
+userid=system/root
+full=y
+file=C:\CHEN\OptRespaldo\respaldos\full.dmp
+log=C:\CHEN\OptRespaldo\logs\crea_resp_full.log
+statistics=none

@@ -1,0 +1,6 @@
+#imp_from_full_to_hr.par
+userid=system/root
+fromuser=hr
+touser=hr
+file=C:\bd2\Full.dmp
+log=C:\bd2\imp_from_full_to_hr.log

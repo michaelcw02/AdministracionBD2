@@ -1,0 +1,18 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+
+Export file created by EXPORT:V11.02.00 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+. importing HR's objects into HR3
+. . importing table                    "LOCATIONS"         23 rows imported
+. . importing table                      "REGIONS"          4 rows imported
+IMP-00017: following statement failed with ORACLE error 942:
+ "ALTER TABLE "LOCATIONS" ADD CONSTRAINT "LOC_C_ID_FK" FOREIGN KEY ("COUNTRY_"
+ "ID") REFERENCES "COUNTRIES" ("COUNTRY_ID") ENABLE NOVALIDATE"
+IMP-00003: ORACLE error 942 encountered
+ORA-00942: table or view does not exist
+About to enable constraints...
+IMP-00017: following statement failed with ORACLE error 2430:
+ "ALTER TABLE "LOCATIONS" ENABLE CONSTRAINT "LOC_C_ID_FK""
+Import terminated successfully with warnings.

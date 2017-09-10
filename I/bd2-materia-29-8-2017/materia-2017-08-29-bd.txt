@@ -1,0 +1,45 @@
+Respaldo y recuperacion.
+-------------------------
+
+Esquema de nube.
+----------------
+Respaldo de Oracle BD
+
+exp puede hacer un respaldo completo de un usuario
+(hay otra version expdp / impdp )
+
+
+Respaldo, de usuario Oracle
+Respaldo, FULL.
+
+Import de un usuario a otro usuario
+Contar la cantidad de objetos por usuario
+--como system
+select owner, count(*)
+from   dba_objects
+where  owner in ('HR','HR2')
+group by owner;
+
+--utilizar herramientas como 7zip
+--utilizar herramientas como namedate.exe
+--utilizar herramientas como dir /x
+--standard output + standard error
+
+--Avance #2 del proyecto, automatizar respaldos
+en el proyecto, con MENUS y SUB-MENUS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

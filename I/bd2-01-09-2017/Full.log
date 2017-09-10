@@ -1,0 +1,552 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export the entire database ...
+. exporting tablespace definitions
+. exporting profiles
+. exporting user definitions
+. exporting roles
+. exporting resource costs
+. exporting rollback segment definitions
+. exporting database links
+. exporting sequence numbers
+. exporting directory aliases
+. exporting context namespaces
+. exporting foreign function library names
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions
+. exporting system procedural objects and actions
+. exporting pre-schema procedural objects and actions
+. exporting cluster definitions
+. about to export SYSTEM's tables via Conventional Path ...
+. . exporting table                    DEF$_AQCALL          0 rows exported
+. . exporting table                   DEF$_AQERROR          0 rows exported
+. . exporting table                  DEF$_CALLDEST          0 rows exported
+. . exporting table               DEF$_DEFAULTDEST          0 rows exported
+. . exporting table               DEF$_DESTINATION          0 rows exported
+. . exporting table                     DEF$_ERROR          0 rows exported
+. . exporting table                       DEF$_LOB          0 rows exported
+. . exporting table                    DEF$_ORIGIN          0 rows exported
+. . exporting table                DEF$_PROPAGATOR          0 rows exported
+. . exporting table       DEF$_PUSHED_TRANSACTIONS          0 rows exported
+. . exporting table                            OL$
+. . exporting table                       OL$HINTS
+. . exporting table                       OL$NODES
+. . exporting table        REPCAT$_AUDIT_ATTRIBUTE          2 rows exported
+. . exporting table           REPCAT$_AUDIT_COLUMN          0 rows exported
+. . exporting table           REPCAT$_COLUMN_GROUP          0 rows exported
+. . exporting table               REPCAT$_CONFLICT          0 rows exported
+. . exporting table                    REPCAT$_DDL          0 rows exported
+. . exporting table             REPCAT$_EXCEPTIONS          0 rows exported
+. . exporting table              REPCAT$_EXTENSION          0 rows exported
+. . exporting table         REPCAT$_FLAVOR_OBJECTS          0 rows exported
+. . exporting table                REPCAT$_FLAVORS          0 rows exported
+. . exporting table              REPCAT$_GENERATED          0 rows exported
+. . exporting table         REPCAT$_GROUPED_COLUMN          0 rows exported
+. . exporting table      REPCAT$_INSTANTIATION_DDL          0 rows exported
+. . exporting table            REPCAT$_KEY_COLUMNS          0 rows exported
+. . exporting table           REPCAT$_OBJECT_PARMS          0 rows exported
+. . exporting table           REPCAT$_OBJECT_TYPES         28 rows exported
+. . exporting table       REPCAT$_PARAMETER_COLUMN          0 rows exported
+. . exporting table               REPCAT$_PRIORITY          0 rows exported
+. . exporting table         REPCAT$_PRIORITY_GROUP          0 rows exported
+. . exporting table      REPCAT$_REFRESH_TEMPLATES          0 rows exported
+. . exporting table                 REPCAT$_REPCAT          0 rows exported
+. . exporting table              REPCAT$_REPCATLOG          0 rows exported
+. . exporting table              REPCAT$_REPCOLUMN          0 rows exported
+. . exporting table         REPCAT$_REPGROUP_PRIVS          0 rows exported
+. . exporting table              REPCAT$_REPOBJECT          0 rows exported
+. . exporting table                REPCAT$_REPPROP          0 rows exported
+. . exporting table              REPCAT$_REPSCHEMA          0 rows exported
+. . exporting table    REPCAT$_RESOL_STATS_CONTROL          0 rows exported
+. . exporting table             REPCAT$_RESOLUTION          0 rows exported
+. . exporting table      REPCAT$_RESOLUTION_METHOD         19 rows exported
+. . exporting table  REPCAT$_RESOLUTION_STATISTICS          0 rows exported
+. . exporting table          REPCAT$_RUNTIME_PARMS          0 rows exported
+. . exporting table           REPCAT$_SITE_OBJECTS          0 rows exported
+. . exporting table              REPCAT$_SITES_NEW          0 rows exported
+. . exporting table              REPCAT$_SNAPGROUP          0 rows exported
+. . exporting table       REPCAT$_TEMPLATE_OBJECTS          0 rows exported
+. . exporting table         REPCAT$_TEMPLATE_PARMS          0 rows exported
+. . exporting table     REPCAT$_TEMPLATE_REFGROUPS          0 rows exported
+. . exporting table         REPCAT$_TEMPLATE_SITES          0 rows exported
+. . exporting table        REPCAT$_TEMPLATE_STATUS          3 rows exported
+. . exporting table       REPCAT$_TEMPLATE_TARGETS          0 rows exported
+. . exporting table         REPCAT$_TEMPLATE_TYPES          2 rows exported
+. . exporting table    REPCAT$_USER_AUTHORIZATIONS          0 rows exported
+. . exporting table       REPCAT$_USER_PARM_VALUES          0 rows exported
+. . exporting table        SQLPLUS_PRODUCT_PROFILE          0 rows exported
+. about to export OUTLN's tables via Conventional Path ...
+. . exporting table                            OL$          0 rows exported
+. . exporting table                       OL$HINTS          0 rows exported
+. . exporting table                       OL$NODES          0 rows exported
+. about to export HR's tables via Conventional Path ...
+. . exporting table                      COUNTRIES         25 rows exported
+. . exporting table                    DEPARTMENTS         27 rows exported
+. . exporting table                      EMPLOYEES        107 rows exported
+. . exporting table                    JOB_HISTORY         10 rows exported
+. . exporting table                           JOBS         19 rows exported
+. . exporting table                      LOCATIONS         23 rows exported
+. . exporting table                        REGIONS          4 rows exported
+. about to export FLOWS_FILES's tables via Conventional Path ...
+. . exporting table         WWV_FLOW_FILE_OBJECTS$          0 rows exported
+. about to export APEX_PUBLIC_USER's tables via Conventional Path ...
+. about to export APEX_040000's tables via Conventional Path ...
+. . exporting table                      APEX$_ACL          0 rows exported
+. . exporting table                 APEX$_WS_FILES          0 rows exported
+. . exporting table               APEX$_WS_HISTORY          0 rows exported
+. . exporting table                 APEX$_WS_LINKS          0 rows exported
+. . exporting table                 APEX$_WS_NOTES          0 rows exported
+. . exporting table                  APEX$_WS_ROWS          0 rows exported
+. . exporting table                  APEX$_WS_TAGS          0 rows exported
+. . exporting table APEX$_WS_WEBPG_SECTION_HISTORY          0 rows exported
+. . exporting table        APEX$_WS_WEBPG_SECTIONS          0 rows exported
+. . exporting table          WWV_COLUMN_EXCEPTIONS          3 rows exported
+. . exporting table                  WWV_DEMO_DEPT
+EXP-00107: Feature (BINARY XML) of column BUDGET in table APEX_040000.WWV_DEMO_DEPT is not supported. The table will not be exported.
+. . exporting table                   WWV_DEMO_EMP        103 rows exported
+. . exporting table  WWV_FLOW_ACTIVITY_LOG_NUMBER$          1 rows exported
+. . exporting table        WWV_FLOW_ACTIVITY_LOG1$          0 rows exported
+. . exporting table        WWV_FLOW_ACTIVITY_LOG2$          2 rows exported
+. . exporting table    WWV_FLOW_ADVISOR_CATEGORIES          6 rows exported
+. . exporting table    WWV_FLOW_ADVISOR_CHECK_MSGS         35 rows exported
+. . exporting table        WWV_FLOW_ADVISOR_CHECKS         23 rows exported
+. . exporting table     WWV_FLOW_ALT_CONFIG_DETAIL          0 rows exported
+. . exporting table       WWV_FLOW_ALT_CONFIG_PICK         37 rows exported
+. . exporting table      WWV_FLOW_ALTERNATE_CONFIG          0 rows exported
+. . exporting table        WWV_FLOW_APP_BUILD_PREF          0 rows exported
+. . exporting table          WWV_FLOW_APP_COMMENTS          0 rows exported
+. . exporting table    WWV_FLOW_APPLICATION_GROUPS          1 rows exported
+. . exporting table       WWV_FLOW_AUTHORIZED_URLS          0 rows exported
+. . exporting table                WWV_FLOW_BANNER         56 rows exported
+. . exporting table                  WWV_FLOW_BUGS          0 rows exported
+. . exporting table   WWV_FLOW_BUILDER_AUDIT_TRAIL          0 rows exported
+. . exporting table      WWV_FLOW_BUTTON_TEMPLATES        428 rows exported
+. . exporting table                  WWV_FLOW_CALS         60 rows exported
+. . exporting table         WWV_FLOW_CAL_TEMPLATES         60 rows exported
+. . exporting table              WWV_FLOW_CHARSETS         32 rows exported
+. . exporting table        WWV_FLOW_CLICKTHRU_LOG$          0 rows exported
+. . exporting table WWV_FLOW_CLICKTHRU_LOG_NUMBER$          1 rows exported
+. . exporting table       WWV_FLOW_CLICKTHRU_LOG2$          0 rows exported
+. . exporting table   WWV_FLOW_COLLECTION_MEMBERS$
+EXP-00107: Feature (BINARY XML) of column XMLTYPE001 in table APEX_040000.WWV_FLOW_COLLECTION_MEMBERS$ is not supported. The table will not be exported.
+. . exporting table          WWV_FLOW_COLLECTIONS$          0 rows exported
+. . exporting table             WWV_FLOW_COMPANIES          3 rows exported
+. . exporting table       WWV_FLOW_COMPANY_SCHEMAS          1 rows exported
+. . exporting table         WWV_FLOW_COMPANY_TYPES         32 rows exported
+. . exporting table   WWV_FLOW_COMPOUND_CONDITIONS          0 rows exported
+. . exporting table          WWV_FLOW_COMPUTATIONS         92 rows exported
+. . exporting table             WWV_FLOW_COUNTRIES        240 rows exported
+. . exporting table        WWV_FLOW_CSS_REPOSITORY          0 rows exported
+. . exporting table    WWV_FLOW_CUSTOM_AUTH_SETUPS         76 rows exported
+. . exporting table      WWV_FLOW_CUSTOMIZED_TASKS          0 rows exported
+. . exporting table                  WWV_FLOW_DATA          0 rows exported
+. . exporting table     WWV_FLOW_DATA_LOAD_BAD_LOG          0 rows exported
+. . exporting table      WWV_FLOW_DATA_LOAD_UNLOAD          0 rows exported
+. . exporting table               WWV_FLOW_DB_AUTH          1 rows exported
+. . exporting table                 WWV_FLOW_DEBUG          0 rows exported
+. . exporting table        WWV_FLOW_DEBUG_MESSAGES          0 rows exported
+. . exporting table       WWV_FLOW_DEBUG_MESSAGES2          0 rows exported
+. . exporting table         WWV_FLOW_DEVELOPER_LOG          0 rows exported
+. . exporting table       WWV_FLOW_DEVELOPER_ROLES          9 rows exported
+. . exporting table            WWV_FLOW_DEVELOPERS          0 rows exported
+. . exporting table      WWV_FLOW_DICTIONARY_VIEWS         59 rows exported
+. . exporting table               WWV_FLOW_DUAL100        100 rows exported
+. . exporting table WWV_FLOW_DYNAMIC_TRANSLATIONS$          0 rows exported
+. . exporting table  WWV_FLOW_EFFECTIVE_USERID_MAP          0 rows exported
+. . exporting table      WWV_FLOW_ENTRY_POINT_ARGS          0 rows exported
+. . exporting table          WWV_FLOW_ENTRY_POINTS          0 rows exported
+. . exporting table                WWV_FLOW_EVENTS          0 rows exported
+. . exporting table       WWV_FLOW_FEATURE_HISTORY          0 rows exported
+. . exporting table      WWV_FLOW_FEATURE_PROGRESS          0 rows exported
+. . exporting table              WWV_FLOW_FEATURES          0 rows exported
+. . exporting table              WWV_FLOW_FEEDBACK          0 rows exported
+. . exporting table     WWV_FLOW_FEEDBACK_FOLLOWUP          0 rows exported
+. . exporting table       WWV_FLOW_FIELD_TEMPLATES        244 rows exported
+. . exporting table     WWV_FLOW_FILE_OBJECTS$PART          0 rows exported
+. . exporting table          WWV_FLOW_FLASH_CHARTS          0 rows exported
+. . exporting table    WWV_FLOW_FLASH_CHART_SERIES          0 rows exported
+. . exporting table        WWV_FLOW_FLASH_CHARTS_5         88 rows exported
+. . exporting table   WWV_FLOW_FLASH_CHARTS_5_DASH          0 rows exported
+. . exporting table   WWV_FLOW_FLASH_CHART5_SERIES        100 rows exported
+. . exporting table       WWV_FLOW_FLASH_MAP_FILES        320 rows exported
+. . exporting table     WWV_FLOW_FLASH_MAP_FOLDERS         22 rows exported
+. . exporting table     WWV_FLOW_FLASH_MAP_REGIONS      13891 rows exported
+. . exporting table       WWV_FLOW_FND_GROUP_USERS          0 rows exported
+. . exporting table              WWV_FLOW_FND_USER          1 rows exported
+. . exporting table       WWV_FLOW_FND_USER_GROUPS          0 rows exported
+. . exporting table     WWV_FLOW_HNT_ARGUMENT_INFO          0 rows exported
+. . exporting table      WWV_FLOW_HNT_COL_DICT_SYN          0 rows exported
+. . exporting table       WWV_FLOW_HNT_COLUMN_DICT          0 rows exported
+. . exporting table       WWV_FLOW_HNT_COLUMN_INFO         58 rows exported
+. . exporting table            WWV_FLOW_HNT_GROUPS          0 rows exported
+. . exporting table          WWV_FLOW_HNT_LOV_DATA          0 rows exported
+. . exporting table    WWV_FLOW_HNT_PROCEDURE_INFO          0 rows exported
+. . exporting table        WWV_FLOW_HNT_TABLE_INFO          8 rows exported
+. . exporting table       WWV_FLOW_HTML_REPOSITORY          0 rows exported
+. . exporting table              WWV_FLOW_ICON_BAR        140 rows exported
+. . exporting table   WWV_FLOW_ICON_BAR_ATTRIBUTES          0 rows exported
+. . exporting table      WWV_FLOW_IMAGE_REPOSITORY          0 rows exported
+. . exporting table         WWV_FLOW_IMPORT_EXPORT          0 rows exported
+. . exporting table               WWV_FLOW_INSTALL          1 rows exported
+. . exporting table     WWV_FLOW_INSTALL_BUILD_OPT          0 rows exported
+. . exporting table        WWV_FLOW_INSTALL_CHECKS          0 rows exported
+. . exporting table       WWV_FLOW_INSTALL_SCRIPTS          0 rows exported
+. . exporting table                 WWV_FLOW_ITEMS        652 rows exported
+. . exporting table       WWV_FLOW_JOB_BIND_VALUES          0 rows exported
+. . exporting table                  WWV_FLOW_JOBS          0 rows exported
+. . exporting table          WWV_FLOW_LANGUAGE_MAP        126 rows exported
+. . exporting table             WWV_FLOW_LANGUAGES        132 rows exported
+. . exporting table                 WWV_FLOW_LINKS          0 rows exported
+. . exporting table            WWV_FLOW_LIST_ITEMS      14256 rows exported
+. . exporting table   WWV_FLOW_LIST_OF_VALUES_DATA      24092 rows exported
+. . exporting table                 WWV_FLOW_LISTS       2904 rows exported
+. . exporting table      WWV_FLOW_LISTS_OF_VALUES$       5796 rows exported
+. . exporting table        WWV_FLOW_LIST_TEMPLATES        772 rows exported
+. . exporting table             WWV_FLOW_LOCK_PAGE          0 rows exported
+. . exporting table         WWV_FLOW_LOCK_PAGE_LOG          0 rows exported
+. . exporting table           WWV_FLOW_LOG_HISTORY          2 rows exported
+. . exporting table              WWV_FLOW_LOV_TEMP
+. . exporting table            WWV_FLOW_LOV_VALUES          6 rows exported
+. . exporting table      WWV_FLOW_MAIL_ATTACHMENTS          0 rows exported
+. . exporting table              WWV_FLOW_MAIL_LOG          0 rows exported
+. . exporting table            WWV_FLOW_MAIL_QUEUE          0 rows exported
+. . exporting table          WWV_FLOW_MENU_OPTIONS       7824 rows exported
+. . exporting table                 WWV_FLOW_MENUS         44 rows exported
+. . exporting table        WWV_FLOW_MENU_TEMPLATES         48 rows exported
+. . exporting table             WWV_FLOW_MESSAGES$      19840 rows exported
+. . exporting table       WWV_FLOW_MODEL_PAGE_COLS          0 rows exported
+. . exporting table    WWV_FLOW_MODEL_PAGE_REGIONS          0 rows exported
+. . exporting table           WWV_FLOW_MODEL_PAGES          0 rows exported
+. . exporting table                WWV_FLOW_MODELS          0 rows exported
+. . exporting table                  WWV_FLOW_NEWS          0 rows exported
+. . exporting table           WWV_FLOW_ONLINE_HELP          0 rows exported
+. . exporting table        WWV_FLOW_ONLINE_HELP_JA          0 rows exported
+. . exporting table            WWV_FLOW_PAGE_CACHE          0 rows exported
+. . exporting table       WWV_FLOW_PAGE_CODE_CACHE          0 rows exported
+. . exporting table       WWV_FLOW_PAGE_DA_ACTIONS       2844 rows exported
+. . exporting table        WWV_FLOW_PAGE_DA_EVENTS       1224 rows exported
+. . exporting table     WWV_FLOW_PAGE_GENERIC_ATTR         62 rows exported
+. . exporting table           WWV_FLOW_PAGE_GROUPS        134 rows exported
+. . exporting table            WWV_FLOW_PAGE_PLUGS      38892 rows exported
+. . exporting table   WWV_FLOW_PAGE_PLUG_TEMPLATES       1684 rows exported
+. . exporting table        WWV_FLOW_PAGES_RESERVED          0 rows exported
+. . exporting table      WWV_FLOW_PAGE_SUBMISSIONS          0 rows exported
+. . exporting table      WWV_FLOW_PASSWORD_HISTORY          2 rows exported
+. . exporting table               WWV_FLOW_PATCHES         48 rows exported
+. . exporting table    WWV_FLOW_PICK_DATABASE_SIZE          0 rows exported
+. . exporting table        WWV_FLOW_PICK_END_USERS          4 rows exported
+. . exporting table       WWV_FLOW_PICK_PAGE_VIEWS          5 rows exported
+. . exporting table         WWV_FLOW_PLATFORM_PREF          0 rows exported
+. . exporting table        WWV_FLOW_PLATFORM_PREFS         26 rows exported
+. . exporting table     WWV_FLOW_PLUGIN_ATTRIBUTES        476 rows exported
+. . exporting table    WWV_FLOW_PLUGIN_ATTR_VALUES        248 rows exported
+. . exporting table         WWV_FLOW_PLUGIN_EVENTS          4 rows exported
+. . exporting table          WWV_FLOW_PLUGIN_FILES          0 rows exported
+. . exporting table               WWV_FLOW_PLUGINS        212 rows exported
+. . exporting table    WWV_FLOW_POPUP_LOV_TEMPLATE         56 rows exported
+. . exporting table          WWV_FLOW_PREFERENCES$          0 rows exported
+. . exporting table            WWV_FLOW_PROCESSING        284 rows exported
+. . exporting table     WWV_FLOW_PROVISION_COMPANY          0 rows exported
+. . exporting table  WWV_FLOW_PROVISION_SERICE_MOD          0 rows exported
+. . exporting table      WWV_FLOW_PURGED_SESSIONS$          0 rows exported
+. . exporting table         WWV_FLOW_QB_SAVED_COND          0 rows exported
+. . exporting table         WWV_FLOW_QB_SAVED_JOIN          0 rows exported
+. . exporting table        WWV_FLOW_QB_SAVED_QUERY          0 rows exported
+. . exporting table         WWV_FLOW_QB_SAVED_TABS          0 rows exported
+. . exporting table          WWV_FLOW_QUERY_COLUMN         51 rows exported
+. . exporting table       WWV_FLOW_QUERY_CONDITION          4 rows exported
+. . exporting table      WWV_FLOW_QUERY_DEFINITION          4 rows exported
+. . exporting table          WWV_FLOW_QUERY_OBJECT          4 rows exported
+. . exporting table         WWV_FLOW_RANDOM_IMAGES         42 rows exported
+. . exporting table WWV_FLOW_REGION_CHART_SER_ATTR          0 rows exported
+. . exporting table  WWV_FLOW_REGION_REPORT_COLUMN      26720 rows exported
+. . exporting table  WWV_FLOW_REGION_REPORT_FILTER          0 rows exported
+. . exporting table   WWV_FLOW_REGION_UPD_RPT_COLS       1853 rows exported
+. . exporting table        WWV_FLOW_REPORT_LAYOUTS          1 rows exported
+. . exporting table WWV_FLOW_REQUEST_VERIFICATIONS          0 rows exported
+. . exporting table        WWV_FLOW_REQUIRED_ROLES          0 rows exported
+. . exporting table    WWV_FLOW_RESTRICTED_SCHEMAS         46 rows exported
+. . exporting table         WWV_FLOW_ROW_TEMPLATES        500 rows exported
+. . exporting table    WWV_FLOW_RSCHEMA_EXCEPTIONS          0 rows exported
+. . exporting table                      WWV_FLOWS         56 rows exported
+. . exporting table              WWV_FLOW_SC_TRANS          0 rows exported
+. . exporting table      WWV_FLOW_SECURITY_SCHEMES        252 rows exported
+. . exporting table             WWV_FLOW_SESSIONS$          0 rows exported
+. . exporting table  WWV_FLOW_SHARED_QRY_SQL_STMTS          0 rows exported
+. . exporting table        WWV_FLOW_SHARED_QUERIES          1 rows exported
+. . exporting table   WWV_FLOW_SHARED_WEB_SERVICES          0 rows exported
+. . exporting table             WWV_FLOW_SHORTCUTS        216 rows exported
+. . exporting table    WWV_FLOW_SHORTCUT_USAGE_MAP          0 rows exported
+. . exporting table             WWV_FLOWS_RESERVED          0 rows exported
+. . exporting table          WWV_FLOW_STANDARD_CSS         27 rows exported
+. . exporting table       WWV_FLOW_STANDARD_EVENTS         22 rows exported
+. . exporting table        WWV_FLOW_STANDARD_ICONS        382 rows exported
+. . exporting table   WWV_FLOW_STANDARD_ITEM_TYPES          1 rows exported
+. . exporting table           WWV_FLOW_STANDARD_JS          2 rows exported
+. . exporting table      WWV_FLOW_STEP_BRANCH_ARGS          0 rows exported
+. . exporting table         WWV_FLOW_STEP_BRANCHES      14464 rows exported
+. . exporting table          WWV_FLOW_STEP_BUTTONS      18756 rows exported
+. . exporting table     WWV_FLOW_STEP_COMPUTATIONS       4940 rows exported
+. . exporting table        WWV_FLOW_STEP_ITEM_HELP      29004 rows exported
+. . exporting table            WWV_FLOW_STEP_ITEMS      46584 rows exported
+. . exporting table       WWV_FLOW_STEP_PROCESSING      10220 rows exported
+. . exporting table                 WWV_FLOW_STEPS       8780 rows exported
+. . exporting table      WWV_FLOW_STEP_VALIDATIONS       9340 rows exported
+. . exporting table              WWV_FLOW_SW_BINDS          0 rows exported
+. . exporting table    WWV_FLOW_SW_CREATE_KEYWORDS         10 rows exported
+. . exporting table     WWV_FLOW_SW_DETAIL_RESULTS          0 rows exported
+. . exporting table      WWV_FLOW_SW_MAIN_KEYWORDS        199 rows exported
+. . exporting table            WWV_FLOW_SW_RESULTS          0 rows exported
+. . exporting table       WWV_FLOW_SW_SET_KEYWORDS          4 rows exported
+. . exporting table           WWV_FLOW_SW_SQL_CMDS          0 rows exported
+. . exporting table        WWV_FLOW_SW_SQLPLUS_CMD          8 rows exported
+. . exporting table              WWV_FLOW_SW_STMTS          0 rows exported
+. . exporting table                  WWV_FLOW_TABS         36 rows exported
+. . exporting table         WWV_FLOW_TASK_DEFAULTS          0 rows exported
+. . exporting table         WWV_FLOW_TASK_PROGRESS          0 rows exported
+. . exporting table                 WWV_FLOW_TASKS          0 rows exported
+. . exporting table     WWV_FLOW_TEAMDEV_TAG_CLOUD          0 rows exported
+. . exporting table            WWV_FLOW_TEAM_FILES          0 rows exported
+. . exporting table             WWV_FLOW_TEAM_TAGS          0 rows exported
+. . exporting table  WWV_FLOW_TEMPLATE_PREFERENCES          0 rows exported
+. . exporting table             WWV_FLOW_TEMPLATES        484 rows exported
+. . exporting table            WWV_FLOW_TEMPLATES$          0 rows exported
+. . exporting table      WWV_FLOW_TEMPLATE_THEMES$          0 rows exported
+. . exporting table            WWV_FLOW_TEMP_TABLE
+. . exporting table            WWV_FLOW_TEMP_TREES
+. . exporting table                WWV_FLOW_THEMES         14 rows exported
+. . exporting table         WWV_FLOW_TOPLEVEL_TABS         24 rows exported
+. . exporting table    WWV_FLOW_TRANSLATABLE_COLS$        316 rows exported
+. . exporting table    WWV_FLOW_TRANSLATABLE_TEXT$          0 rows exported
+. . exporting table          WWV_FLOW_TREE_REGIONS         20 rows exported
+. . exporting table                 WWV_FLOW_TREES          6 rows exported
+. . exporting table            WWV_FLOW_TREE_STATE          0 rows exported
+. . exporting table  WWV_FLOW_UPG_COL_NAME_CHANGES          0 rows exported
+. . exporting table      WWV_FLOW_UPGRADE_PROGRESS        107 rows exported
+. . exporting table  WWV_FLOW_UPG_TAB_NAME_CHANGES         42 rows exported
+. . exporting table      WWV_FLOW_UPG_TAB_OBSOLETE         17 rows exported
+. . exporting table  WWV_FLOW_USER_ACCESS_LOG_NUM$          1 rows exported
+. . exporting table     WWV_FLOW_USER_ACCESS_LOG1$          0 rows exported
+. . exporting table     WWV_FLOW_USER_ACCESS_LOG2$          0 rows exported
+. . exporting table           WWV_FLOW_VALIDATIONS          0 rows exported
+. . exporting table              WWV_FLOW_VERSION$          0 rows exported
+. . exporting table  WWV_FLOW_WORKSHEET_CATEGORIES          0 rows exported
+. . exporting table  WWV_FLOW_WORKSHEET_COL_GROUPS         28 rows exported
+. . exporting table     WWV_FLOW_WORKSHEET_COLUMNS      16952 rows exported
+. . exporting table WWV_FLOW_WORKSHEET_COMPUTATION          1 rows exported
+. . exporting table  WWV_FLOW_WORKSHEET_CONDITIONS         11 rows exported
+. . exporting table    WWV_FLOW_WORKSHEET_GEOCACHE          0 rows exported
+. . exporting table    WWV_FLOW_WORKSHEET_GROUP_BY          0 rows exported
+. . exporting table WWV_FLOW_WORKSHEET_LOV_ENTRIES          0 rows exported
+. . exporting table        WWV_FLOW_WORKSHEET_LOVS          0 rows exported
+. . exporting table      WWV_FLOW_WORKSHEET_NOTIFY          0 rows exported
+. . exporting table        WWV_FLOW_WORKSHEET_RPTS        375 rows exported
+. . exporting table            WWV_FLOW_WORKSHEETS       1496 rows exported
+. . exporting table    WWV_FLOW_WORKSPACE_REQ_SIZE         14 rows exported
+. . exporting table     WWV_FLOW_WORKSPACE_SUMMARY          0 rows exported
+. . exporting table       WWV_FLOW_WS_APPLICATIONS          0 rows exported
+. . exporting table    WWV_FLOW_WS_APP_SUG_OBJECTS          0 rows exported
+. . exporting table    WWV_FLOW_WS_COL_VALIDATIONS          0 rows exported
+. . exporting table        WWV_FLOW_WS_CONSTRAINTS         20 rows exported
+. . exporting table WWV_FLOW_WS_CUSTOM_AUTH_SETUPS          0 rows exported
+. . exporting table        WWV_FLOW_WS_IND_COLUMNS         29 rows exported
+. . exporting table            WWV_FLOW_WS_INDEXES         12 rows exported
+. . exporting table         WWV_FLOW_WS_OPERATIONS          0 rows exported
+. . exporting table         WWV_FLOW_WS_PARAMETERS          0 rows exported
+. . exporting table  WWV_FLOW_WS_PROCESS_PARMS_MAP          0 rows exported
+. . exporting table        WWV_FLOW_WS_TAB_COLUMNS        276 rows exported
+. . exporting table             WWV_FLOW_WS_TABLES          9 rows exported
+. . exporting table           WWV_FLOW_WS_TRIGGERS          7 rows exported
+. . exporting table           WWV_FLOW_WS_WEBPAGES          0 rows exported
+. . exporting table      WWV_FLOW_WS_WEBSHEET_ATTR          0 rows exported
+. . exporting table            WWV_MIG_ACC_COLUMNS          0 rows exported
+. . exporting table                 WWV_MIG_ACCESS          0 rows exported
+. . exporting table              WWV_MIG_ACC_FORMS          0 rows exported
+. . exporting table     WWV_MIG_ACC_FORMS_CONTROLS          0 rows exported
+. . exporting table      WWV_MIG_ACC_FORMS_MODULES          0 rows exported
+. . exporting table         WWV_MIG_ACC_FORMS_PERM          0 rows exported
+. . exporting table             WWV_MIG_ACC_GROUPS          0 rows exported
+. . exporting table        WWV_MIG_ACC_GRPSMEMBERS          0 rows exported
+. . exporting table            WWV_MIG_ACC_INDEXES          0 rows exported
+. . exporting table       WWV_MIG_ACC_INDEXES_COLS          0 rows exported
+. . exporting table            WWV_MIG_ACC_MODULES          0 rows exported
+. . exporting table       WWV_MIG_ACC_MODULES_PERM          0 rows exported
+. . exporting table              WWV_MIG_ACC_PAGES          0 rows exported
+. . exporting table            WWV_MIG_ACC_QUERIES          0 rows exported
+. . exporting table      WWV_MIG_ACC_RELATION_COLS          0 rows exported
+. . exporting table          WWV_MIG_ACC_RELATIONS          0 rows exported
+. . exporting table            WWV_MIG_ACC_REPORTS          0 rows exported
+. . exporting table          WWV_MIG_ACC_RPT_PERMS          0 rows exported
+. . exporting table      WWV_MIG_ACC_RPTS_CONTROLS          0 rows exported
+. . exporting table       WWV_MIG_ACC_RPTS_MODULES          0 rows exported
+. . exporting table             WWV_MIG_ACC_TABLES          0 rows exported
+. . exporting table           WWV_MIG_ACC_TAB_PERM          0 rows exported
+. . exporting table              WWV_MIG_ACC_USERS          0 rows exported
+. . exporting table               WWV_MIG_EXPORTER          5 rows exported
+. . exporting table                  WWV_MIG_FORMS
+EXP-00107: Feature (BINARY XML) of column XML_CONTENT in table APEX_040000.WWV_MIG_FORMS is not supported. The table will not be exported.
+. . exporting table             WWV_MIG_FRM_ALERTS          0 rows exported
+. . exporting table    WWV_MIG_FRM_ATTACHEDLIBRARY          0 rows exported
+. . exporting table            WWV_MIG_FRM_BLK_DSA          0 rows exported
+. . exporting table            WWV_MIG_FRM_BLK_DSC          0 rows exported
+. . exporting table       WWV_MIG_FRM_BLK_ITEM_LIE          0 rows exported
+. . exporting table     WWV_MIG_FRM_BLK_ITEM_RADIO          0 rows exported
+. . exporting table          WWV_MIG_FRM_BLK_ITEMS          0 rows exported
+. . exporting table  WWV_MIG_FRM_BLK_ITEM_TRIGGERS          0 rows exported
+. . exporting table      WWV_MIG_FRM_BLK_RELATIONS          0 rows exported
+. . exporting table       WWV_MIG_FRM_BLK_TRIGGERS          0 rows exported
+. . exporting table             WWV_MIG_FRM_BLOCKS          0 rows exported
+. . exporting table             WWV_MIG_FRM_CANVAS          0 rows exported
+. . exporting table  WWV_MIG_FRM_CNVG_COMPOUNDTEXT          0 rows exported
+. . exporting table      WWV_MIG_FRM_CNVS_GRAPHICS          0 rows exported
+. . exporting table       WWV_MIG_FRM_CNVS_TABPAGE          0 rows exported
+. . exporting table        WWV_MIG_FRM_COORDINATES          0 rows exported
+. . exporting table WWV_MIG_FRM_CPDTXT_TEXTSEGMENT          0 rows exported
+. . exporting table             WWV_MIG_FRM_EDITOR          0 rows exported
+. . exporting table           WWV_MIG_FRM_FMB_MENU          0 rows exported
+. . exporting table  WWV_MIG_FRM_FMB_MENUITEM_ROLE          0 rows exported
+. . exporting table  WWV_MIG_FRM_FMB_MENU_MENUITEM          0 rows exported
+. . exporting table        WWV_MIG_FRM_FORMMODULES          0 rows exported
+. . exporting table                WWV_MIG_FRM_LOV          0 rows exported
+. . exporting table   WWV_MIG_FRM_LOVCOLUMNMAPPING          0 rows exported
+. . exporting table               WWV_MIG_FRM_MENU          0 rows exported
+. . exporting table      WWV_MIG_FRM_MENUITEM_ROLE          0 rows exported
+. . exporting table      WWV_MIG_FRM_MENU_MENUITEM          0 rows exported
+. . exporting table              WWV_MIG_FRM_MENUS
+EXP-00107: Feature (BINARY XML) of column XML_CONTENT in table APEX_040000.WWV_MIG_FRM_MENUS is not supported. The table will not be exported.
+. . exporting table  WWV_MIG_FRM_MENUS_MENUMODULES          0 rows exported
+. . exporting table   WWV_MIG_FRM_MENUSMODULEROLES          0 rows exported
+. . exporting table      WWV_MIG_FRM_MENUS_MODULES          0 rows exported
+. . exporting table  WWV_MIG_FRM_MENUS_PROGRAMUNIT          0 rows exported
+. . exporting table    WWV_MIG_FRM_MODULEPARAMETER          0 rows exported
+. . exporting table            WWV_MIG_FRM_MODULES          0 rows exported
+. . exporting table        WWV_MIG_FRM_OBJECTGROUP          0 rows exported
+. . exporting table   WWV_MIG_FRM_OBJECTGROUPCHILD          0 rows exported
+. . exporting table WWV_MIG_FRM_OLB_XMLTAGTABLEMAP         45 rows exported
+. . exporting table        WWV_MIG_FRM_PROGRAMUNIT          0 rows exported
+. . exporting table      WWV_MIG_FRM_PROPERTYCLASS          0 rows exported
+. . exporting table  WWV_MIG_FRM_RECORDGROUPCOLUMN          0 rows exported
+. . exporting table       WWV_MIG_FRM_RECORDGROUPS          0 rows exported
+. . exporting table             WWV_MIG_FRM_REPORT          0 rows exported
+. . exporting table       WWV_MIG_FRM_REV_APEX_APP          0 rows exported
+. . exporting table      WWV_MIG_FRM_REV_BLK_ITEMS          0 rows exported
+. . exporting table         WWV_MIG_FRM_REV_BLOCKS          0 rows exported
+. . exporting table    WWV_MIG_FRM_REV_FORMMODULES          0 rows exported
+. . exporting table            WWV_MIG_FRM_REV_LOV          0 rows exported
+. . exporting table     WWV_MIG_FRM_REV_LOVCOLMAPS          0 rows exported
+. . exporting table           WWV_MIG_FRM_TRIGGERS          0 rows exported
+. . exporting table   WWV_MIG_FRM_VISUALATTRIBUTES          0 rows exported
+. . exporting table            WWV_MIG_FRM_WINDOWS          0 rows exported
+. . exporting table     WWV_MIG_FRM_XMLTAGTABLEMAP         36 rows exported
+. . exporting table WWV_MIG_GENERATED_APPLICATIONS          0 rows exported
+. . exporting table    WWV_MIG_MENU_XMLTAGTABLEMAP          7 rows exported
+. . exporting table                    WWV_MIG_OLB
+EXP-00107: Feature (BINARY XML) of column XML_CONTENT in table APEX_040000.WWV_MIG_OLB is not supported. The table will not be exported.
+. . exporting table  WWV_MIG_OLB_BLK_DATASOURCECOL          0 rows exported
+. . exporting table           WWV_MIG_OLB_BLK_ITEM          0 rows exported
+. . exporting table       WWV_MIG_OLB_BLK_ITEM_LIE          0 rows exported
+. . exporting table   WWV_MIG_OLB_BLK_ITEM_TRIGGER          0 rows exported
+. . exporting table        WWV_MIG_OLB_BLK_TRIGGER          0 rows exported
+. . exporting table              WWV_MIG_OLB_BLOCK          0 rows exported
+. . exporting table             WWV_MIG_OLB_CANVAS          0 rows exported
+. . exporting table    WWV_MIG_OLB_CG_COMPOUNDTEXT          0 rows exported
+. . exporting table  WWV_MIG_OLB_CG_CT_TEXTSEGMENT          0 rows exported
+. . exporting table      WWV_MIG_OLB_CNVS_GRAPHICS          0 rows exported
+. . exporting table            WWV_MIG_OLB_MODULES          0 rows exported
+. . exporting table      WWV_MIG_OLB_OBJECTLIBRARY          0 rows exported
+. . exporting table   WWV_MIG_OLB_OBJECTLIBRARYTAB          0 rows exported
+. . exporting table          WWV_MIG_OLB_OLT_ALERT          0 rows exported
+. . exporting table       WWV_MIG_OLB_OLT_BLK_ITEM          0 rows exported
+. . exporting table WWV_MIG_OLB_OLT_BLK_ITEM_TRIGR          0 rows exported
+. . exporting table          WWV_MIG_OLB_OLT_BLOCK          0 rows exported
+. . exporting table         WWV_MIG_OLB_OLT_CANVAS          0 rows exported
+. . exporting table  WWV_MIG_OLB_OLT_CNVS_GRAPHICS          0 rows exported
+. . exporting table       WWV_MIG_OLB_OLT_GRAPHICS          0 rows exported
+. . exporting table           WWV_MIG_OLB_OLT_ITEM          0 rows exported
+. . exporting table           WWV_MIG_OLB_OLT_MENU          0 rows exported
+. . exporting table  WWV_MIG_OLB_OLT_MENU_MENUITEM          0 rows exported
+. . exporting table    WWV_MIG_OLB_OLT_OBJECTGROUP          0 rows exported
+. . exporting table WWV_MIG_OLB_OLT_OB_OBJGRPCHILD          0 rows exported
+. . exporting table         WWV_MIG_OLB_OLT_REPORT          0 rows exported
+. . exporting table        WWV_MIG_OLB_OLT_TABPAGE          0 rows exported
+. . exporting table WWV_MIG_OLB_OLT_TABPG_GRAPHICS          0 rows exported
+. . exporting table WWV_MIG_OLB_OLT_VISUALATTRBUTE          0 rows exported
+. . exporting table         WWV_MIG_OLB_OLT_WINDOW          0 rows exported
+. . exporting table        WWV_MIG_OLB_PROGRAMUNIT          0 rows exported
+. . exporting table      WWV_MIG_OLB_PROPERTYCLASS          0 rows exported
+. . exporting table     WWV_MIG_OLB_T_TP_GG_CPDTXT          0 rows exported
+. . exporting table  WWV_MIG_OLB_T_TP_GG_CT_TXTSGT          0 rows exported
+. . exporting table    WWV_MIG_OLB_T_TP_GGG_CPDTXT          0 rows exported
+. . exporting table WWV_MIG_OLB_T_TP_GGG_CT_TXTSGT          0 rows exported
+. . exporting table   WWV_MIG_OLB_T_TP_GGGG_CPDTXT          0 rows exported
+. . exporting table WWV_MIG_OLB_T_TP_GGGG_CT_TXSGT          0 rows exported
+. . exporting table  WWV_MIG_OLB_T_TP_GGGGG_CPDTXT          0 rows exported
+. . exporting table WWV_MIG_OLB_T_TP_GGGGG_CT_TXST          0 rows exported
+. . exporting table WWV_MIG_OLB_T_TP_GGGG_GRAPHICS          0 rows exported
+. . exporting table  WWV_MIG_OLB_T_TP_GGG_GRAPHICS          0 rows exported
+. . exporting table   WWV_MIG_OLB_T_TP_GG_GRAPHICS          0 rows exported
+. . exporting table    WWV_MIG_OLB_T_TP_G_GRAPHICS          0 rows exported
+. . exporting table    WWV_MIG_OLB_VISUALATTRIBUTE          0 rows exported
+. . exporting table             WWV_MIG_OLB_WINDOW          0 rows exported
+. . exporting table             WWV_MIG_PLSQL_LIBS
+EXP-00107: Feature (BINARY XML) of column XML_CONTENT in table APEX_040000.WWV_MIG_PLSQL_LIBS is not supported. The table will not be exported.
+. . exporting table     WWV_MIG_PROJECT_COMPONENTS          0 rows exported
+. . exporting table               WWV_MIG_PROJECTS          0 rows exported
+. . exporting table       WWV_MIG_PROJECT_TRIGGERS          0 rows exported
+. . exporting table                 WWV_MIG_REPORT          0 rows exported
+. . exporting table         WWV_MIG_RESERVED_WORDS         92 rows exported
+. . exporting table            WWV_MIG_REV_APEXAPP          0 rows exported
+. . exporting table              WWV_MIG_REV_FORMS          0 rows exported
+. . exporting table            WWV_MIG_REV_QUERIES          0 rows exported
+. . exporting table            WWV_MIG_REV_REPORTS          0 rows exported
+. . exporting table             WWV_MIG_REV_TABLES          0 rows exported
+. . exporting table               WWV_MIG_RPT_DATA          0 rows exported
+. . exporting table            WWV_MIG_RPT_DATASRC          0 rows exported
+. . exporting table        WWV_MIG_RPT_DATASRC_GRP          0 rows exported
+. . exporting table     WWV_MIG_RPT_DATASRC_SELECT          0 rows exported
+. . exporting table       WWV_MIG_RPT_DATA_SUMMARY          0 rows exported
+. . exporting table       WWV_MIG_RPT_GRP_DATAITEM          0 rows exported
+. . exporting table  WWV_MIG_RPT_GRP_DATAITEM_DESC          0 rows exported
+. . exporting table  WWV_MIG_RPT_GRP_DATAITEM_PRIV          0 rows exported
+. . exporting table          WWV_MIG_RPT_GRP_FIELD          0 rows exported
+. . exporting table         WWV_MIG_RPT_GRP_FILTER          0 rows exported
+. . exporting table        WWV_MIG_RPT_GRP_FORMULA          0 rows exported
+. . exporting table       WWV_MIG_RPT_GRP_ROWDELIM          0 rows exported
+. . exporting table        WWV_MIG_RPT_GRP_SUMMARY          0 rows exported
+. . exporting table      WWV_MIG_RPT_REPORTPRIVATE          0 rows exported
+. . exporting table                   WWV_MIG_RPTS
+EXP-00107: Feature (BINARY XML) of column XML_CONTENT in table APEX_040000.WWV_MIG_RPTS is not supported. The table will not be exported.
+. . exporting table     WWV_MIG_RPT_XMLTAGTABLEMAP         15 rows exported
+. . exporting table            WWV_PURGE_DATAFILES          0 rows exported
+. . exporting table               WWV_PURGE_EMAILS          0 rows exported
+. . exporting table                  WWV_PURGE_LOG          0 rows exported
+. . exporting table              WWV_PURGE_SCHEMAS          0 rows exported
+. . exporting table  WWV_PURGE_WORKSPACE_RESPONSES          0 rows exported
+. . exporting table           WWV_PURGE_WORKSPACES          0 rows exported
+. about to export ANA's tables via Conventional Path ...
+. . exporting table                      EMPLEADOS          2 rows exported
+. about to export JUAN's tables via Conventional Path ...
+. . exporting table                       MASCOTAS          1 rows exported
+. exporting synonyms
+. exporting views
+. exporting referential integrity constraints
+. exporting stored procedures
+. exporting operators
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting triggers
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting user history table
+. exporting default and system auditing options
+. exporting statistics
+Export terminated successfully with warnings.

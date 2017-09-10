@@ -1,0 +1,163 @@
+Linea de comando / clase 1-9-2017
+--tarea moral (volverlo a practiar)
+--montarlo en .BATs
+--compresion , NAMEDATE...
+
+--Full
+exp parfile=C:\bd2\Full.par
+--
+sqlplus system/root @C:\bd2\crear_hr3.sql
+--
+select owner, count(*)
+from   dba_objects
+where  owner in ('HR','HR3')
+group  by owner;
+
+--ya tenemos el FULL.DMP
+--crear file imp_from_full_hr3.par
+--invocamos el import
+imp parfile=C:\bd2\imp_from_full_hr3.par
+
+--
+sqlplus system/root @C:\bd2\crear_hr3.sql
+
+--importar de full solo dos tablas
+select table_name
+from   dba_tables
+where  owner = 'HR'
+order by 1;
+--importar REGIONS, LOCATIONS
+
+imp parfile=C:\bd2\imp_from_full_hr3_tables.par
+
+--export de tablas
+de HR, vamos a exportar : REGIONS, LOCATIONS
+
+exp parfile=C:\bd2\exp_hr_tables.par
+
+
+--import full del export anterior?
+--TAREA MORAL!!!
+SQL> drop user hr cascade;
+
+User dropped.
+
+SQL> create user hr identified by hr;
+
+User created.
+
+SQL> grant dba to hr;
+
+Grant succeeded.
+
+SQL>
+--recupere 2 tablas
+imp parfile=imp_full_hr_tables.par
+
+-----lo recupero del FULL
+--vuelvo a drop HR
+--
+imp parfile=C:\bd2\imp_from_full_to_hr.par
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
