@@ -1,0 +1,9 @@
+#exp parfile=C:\bd2\hr.par
+#Pueden respaldar dos owners
+#owner=hr, system
+userid=system/root
+owner=hr
+rows=y
+statistics=none
+file=C:\bd2\hr.dmp
+log=C:\bd2\hr.log
