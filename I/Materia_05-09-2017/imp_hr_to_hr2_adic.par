@@ -1,0 +1,7 @@
+#imp parfile=C:\bd2\imp_hr_to_hr2_adic.par
+userid=system/root
+fromuser=hr
+touser=hr2
+rows=n
+file=C:\bd2\hr.dmp
+log=C:\bd2\hr2_import.log

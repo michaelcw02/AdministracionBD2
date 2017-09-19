@@ -1,0 +1,7 @@
+# 1_B_system_help_table
+userid=system/root
+fromuser=system
+touser=system3
+tables=SQLPLUS_PRODUCT_PROFILE
+file=C:\bd2\pre-practica\respaldos\Full.dmp
+log=C:\bd2\pre-practica\logs\1_B_system_help_table.log

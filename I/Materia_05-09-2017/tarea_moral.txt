@@ -1,0 +1,89 @@
+Respaldo Tarea Moral
+--------------------
+#1
+hr es un usuario de la BD.
+hacemos exp file: hr.dmp con registros
+hacemos exp file: hr2.dmp sin registros
+
+#2
+crear hr2 para importar de hr2.dmp ok
+drop user hr2 cascade;
+create user hr2 identified by hr321;
+grant dba to hr2;
+
+
+#3
+importar full del export sin registros de hr.
+ (cambio de owner)
+OJO pero: antes de importar, en otro query hacer
+esto:
+select count(*) from hr2.employees;
+y luego de ejecutar el import, que pasa
+con la consulta anterior?
+
+#4
+dropear hr2 (y volverlo a crear), 
+
+drop user hr2 cascade;
+create user hr2 identified by hr321;
+grant dba to hr2;
+
+
+y volver a realizar el import
+pero usando hr.dmp
+
+que pasa con?
+select count(*) from hr2.employees;
+
+#5 
+dropear hr2 (y volverlo a crear), 
+y realizar el import de hr.dmp
+pero indicar rows=n
+++++++++++++++++++++++++++++++++++
+Tarea moral, practicar el dir /x
+para ubicar los directorios con nombres 
+cortos 8 letras
+
+ejemplo:
+cd ..
+cd ..
+hasta C:
+dir /x
+
+ubicar carpeta
+
+cd PROGRA~2
+
+dir /x
+
+obtengo NOTEPA~1
+
+ruta completa es:
+
+C:\PROGRA~2\NOTEPA~1\notepad++.exe
+
+
+Archivos .ini archivos de parámetros del sistema
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++
+ayuda local del exp y imp
+exp -help
+imp -help
+
+--para contar los objetos por tipo de HR o HR2
+select object_type, count(*)
+from   dba_objects
+where  owner = 'HR'
+group by object_type;
+
+--- para ambos grupos y especial 8PM.
+Practicarlo todo nuevamente!!
+
+

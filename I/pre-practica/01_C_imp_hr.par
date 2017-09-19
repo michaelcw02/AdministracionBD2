@@ -1,0 +1,8 @@
+# 01_C_imp_hr
+userid=system/root
+fromuser=hr
+touser=hr5
+constraints=n
+indexes=n
+file=C:\bd2\pre-practica\respaldos\Full.dmp
+log=C:\bd2\pre-practica\logs\01_C_imp_hr.log

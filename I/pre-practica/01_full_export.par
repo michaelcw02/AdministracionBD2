@@ -1,0 +1,5 @@
+userid=system/root
+full=y
+file=C:\bd2\pre-practica\respaldos\full.dmp
+log=C:\bd2\pre-practica\logs\01_full_export.log
+statistics=none

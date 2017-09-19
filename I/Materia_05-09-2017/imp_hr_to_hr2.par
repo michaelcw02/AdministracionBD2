@@ -1,0 +1,6 @@
+#imp parfile=C:\bd2\imp_hr_to_hr2.par
+userid=system/root
+fromuser=hr
+touser=hr2
+file=C:\bd2\hr.dmp
+log=C:\bd2\hr2_import.log
