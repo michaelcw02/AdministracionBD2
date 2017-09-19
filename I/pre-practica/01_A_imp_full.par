@@ -1,6 +1,6 @@
 # imp_from_full_to_system2
 userid=system/root
-fromuser=hr
+fromuser=system
 touser=system2
 rows=n
 file=C:\bd2\pre-practica\respaldos\Full.dmp

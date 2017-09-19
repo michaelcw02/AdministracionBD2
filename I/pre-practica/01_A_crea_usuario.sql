@@ -4,7 +4,7 @@ set linesize 250
 set pagesize 100 
 
 spool C:\bd2\pre-practica\logs\01_A.log
-PROMPT BORRAR Y CREAR USUARIO NUEVO
+PROMPT BORRAR Y CREAR USUARIO (SYSTEM2)
 
 DROP USER system2 CASCADE;
 CREATE USER system2 IDENTIFIED BY root;
