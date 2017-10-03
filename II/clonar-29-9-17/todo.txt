@@ -1,0 +1,12 @@
+1. La clave del usuario destino, capturarla como parametro y usarla al mometo de crearlo
+
+2. Que el script dinamico "ejecuta_clonar1.sql" genere un "ejecuta_clonar1.log"
+
+3. Que el usuario destino clone las tablas, pero agregue el SUFIJO _TAB
+    Ejemplo> 
+        SISTEMA.CON01
+        HUGO.CON01_TAB
+
+DROP PUBLIC SYNONM S1CON1;
+
+CREATE PUBLIC SYNONYM S1CON1 FOR HUGO.CON1;

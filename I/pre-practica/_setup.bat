@@ -59,6 +59,13 @@ ECHO ========================================================== >> C:\bd2\pre-pr
 ECHO Paso 1.C - CREAR USUARIO (hr5) - REALIZAR IMPORT DE HR - [TERMINADO]  >> C:\bd2\pre-practica\logs\01_A.log
 ECHO ========================================================== >> C:\bd2\pre-practica\logs\01_A.log
 
+REM RESPALDO HR
+exp parfile=C:\bd2\pre-practica\02_export_hr.par
+ECHO ========================================================== >> C:\bd2\pre-practica\logs\01_full_export.log
+ECHO Paso 2 - Export hr - [TERMINADO] >> C:\bd2\pre-practica\logs\01_full_export.log
+ECHO ========================================================== >> C:\bd2\pre-practica\logs\01_full_export.log
+START %NotepadPP% C:\bd2\pre-practica\logs\01_full_export.log
+
 
 START %NotepadPP% C:\bd2\pre-practica\logs\01_A.log
 

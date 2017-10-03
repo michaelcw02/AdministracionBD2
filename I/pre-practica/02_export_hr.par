@@ -1,0 +1,6 @@
+userid=system/root
+fromuser=hr
+touserhr6
+file=C:\bd2\pre-practica\respaldos\hr.dmp
+log=C:\bd2\pre-practica\logs\02_hr_export.log
+statistics=none
