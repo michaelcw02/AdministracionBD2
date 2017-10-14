@@ -1,0 +1,13 @@
+crear un menu
+1. Crear tablas de sistema, pla y con (Borra y Crea)
+2. Escoger un prefijo, pla o con, crear un rol por cada tabla, que se va a llamar = rol_tabla (Con )
+        pla01
+        pla02
+        pla03
+        Hacer 
+        Darle todos los permisos CRUD
+        
+
+Investigar la tabla que maneja los roles y permisos 
+para que estos se los vayan asignar a los usuarios
+
