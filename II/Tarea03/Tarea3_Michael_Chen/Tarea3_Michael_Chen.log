@@ -1,0 +1,71 @@
+========================================================== 
+Opcion 1 - Crear Usuario Mineria y Tablespaces 
+========================================================== 
+=== Opcion 1:
+Droppeando usuario mineria y tablespaces
+
+User dropped.
+
+
+Tablespace dropped.
+
+
+Tablespace dropped.
+
+
+Role dropped.
+
+
+Role dropped.
+
+Creando Tablespaces
+
+Tablespace created.
+
+
+Tablespace created.
+
+Creando usuario mineria con permisos de dba
+
+User created.
+
+
+Grant succeeded.
+
+
+Role created.
+
+
+Role created.
+
+. 
+========================================================== 
+Opcion 2 - Realizar un import completo 
+========================================================== 
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+Export file created by EXPORT:V11.02.00 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+. importing MINERIA's objects into MINERIA
+. importing MINERIA's objects into MINERIA
+. . importing table                    "DISTRITOS"       2030 rows imported
+. . importing table                       "PADRON"    2863657 rows imported
+Import terminated successfully without warnings.
+. 
+========================================================== 
+Opcion 3 - Realizar un conteo de registros importados 
+========================================================== 
+=== Opcion 3:
+Realizando conteo de registros
+
+CANTIDAD_EN_TABLA_PADRON                                                        
+------------------------                                                        
+                 2863657                                                        
+
+
+CANTIDAD_EN_TABLA_DISTRITOS                                                     
+---------------------------                                                     
+                       2030                                                     
+

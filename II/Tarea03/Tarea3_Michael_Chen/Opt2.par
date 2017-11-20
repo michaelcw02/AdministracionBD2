@@ -1,0 +1,8 @@
+#Opt2.par
+#imp parfile=C:\bd2\Tarea3_Michael_Chen\Opt2.par
+userid=mineria/mineria
+file=C:\bd2\padron2010.dmp
+log=C:\bd2\Tarea3_Michael_Chen\padron2010.log
+#full=y
+#rows=n
+tables=padron, distritos
